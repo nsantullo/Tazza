@@ -1,0 +1,65 @@
+/* Tazza: Italiano */
+
+"status.off" = "Spento: il Mac può andare in stop";
+"status.on.indefinite" = "Attivo: il Mac resta sveglio";
+"status.on.remaining" = "Attivo: restano circa %d min";
+
+"action.stop" = "Disattiva";
+"action.indefinite" = "Tieni sveglio (senza limite)";
+"action.30m" = "30 minuti";
+"action.1h" = "1 ora";
+"action.2h" = "2 ore";
+"action.4h" = "4 ore";
+"action.displayoff" = "Spegni lo schermo ora";
+"action.untilapp" = "Tieni sveglio finché si chiude un'app";
+"action.untilapp.none" = "Nessuna app aperta";
+"status.on.untilapp" = "Attivo finché si chiude %@";
+"notify.appquit" = "%@ si è chiusa: il Mac può di nuovo andare in stop";
+
+"notify.timer" = "Timer finito: il Mac può di nuovo andare in stop";
+"notify.lowbattery" = "Disattivata: batteria sotto il %d%%";
+"notify.warning" = "Tazza si spegne tra 5 minuti. Poi il Mac potrà andare in stop.";
+"notify.action.extend" = "Aggiungi 30 min";
+"notify.action.stop" = "Spegni ora";
+
+"stats.title" = "Statistiche";
+
+"holders.title" = "Chi tiene sveglio il Mac (%d)";
+"holders.none" = "Nessuna app sta bloccando lo stop";
+"holders.name.coreaudiod" = "Audio (coreaudiod)";
+"holders.name.sharingd" = "Handoff e AirDrop (sharingd)";
+"holders.name.caffeinate" = "Comando caffeinate (Terminale)";
+
+"battery.level" = "Batteria: %d%% (%@)";
+"battery.state.full" = "carica";
+"battery.state.charging" = "in carica";
+"battery.state.plugged" = "collegato alla corrente";
+"battery.state.discharging" = "a batteria";
+"battery.timeleft" = "Tempo rimanente: %@";
+"battery.timetofull" = "Tempo alla carica completa: %@";
+"battery.health" = "Salute batteria: %d%%";
+"battery.cycles" = "Cicli di carica: %d";
+"battery.temp" = "Temperatura batteria: %.1f °C";
+"battery.none" = "Nessuna batteria rilevata";
+
+"awake.session" = "Sessione attuale: %@";
+"awake.today" = "Tenuto sveglio oggi: %@";
+"awake.week" = "Tenuto sveglio, ultimi 7 giorni: %@";
+
+"system.uptime" = "Mac acceso da: %@";
+"system.thermal" = "Stato termico: %@";
+"system.lowpower" = "Modalità Risparmio Energia attiva";
+
+"thermal.nominal" = "normale";
+"thermal.fair" = "tiepido";
+"thermal.serious" = "caldo";
+"thermal.critical" = "critico";
+
+"option.display" = "Tieni acceso anche lo schermo";
+"option.lowbattery" = "Disattiva sotto il %d%% di batteria";
+"option.showpercent" = "Mostra % batteria nella barra";
+"option.login" = "Apri all'avvio";
+
+"menu.support" = "Sostieni Tazza ☕";
+"menu.sourcecode" = "Codice sorgente su GitHub";
+"menu.quit" = "Esci da Tazza";

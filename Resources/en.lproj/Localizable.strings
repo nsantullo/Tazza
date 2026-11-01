@@ -1,0 +1,65 @@
+/* Tazza: English (default language and fallback) */
+
+"status.off" = "Off: your Mac can sleep";
+"status.on.indefinite" = "On: keeping your Mac awake";
+"status.on.remaining" = "On: about %d min left";
+
+"action.stop" = "Turn off";
+"action.indefinite" = "Keep awake (no time limit)";
+"action.30m" = "30 minutes";
+"action.1h" = "1 hour";
+"action.2h" = "2 hours";
+"action.4h" = "4 hours";
+"action.displayoff" = "Turn off the screen now";
+"action.untilapp" = "Keep awake until an app quits";
+"action.untilapp.none" = "No open apps";
+"status.on.untilapp" = "On until %@ quits";
+"notify.appquit" = "%@ quit: your Mac can sleep again";
+
+"notify.timer" = "Timer finished: your Mac can sleep again";
+"notify.lowbattery" = "Turned off: battery below %d%%";
+"notify.warning" = "Tazza turns off in 5 minutes. After that, your Mac can sleep.";
+"notify.action.extend" = "Add 30 min";
+"notify.action.stop" = "Turn off now";
+
+"stats.title" = "Statistics";
+
+"holders.title" = "What keeps the Mac awake (%d)";
+"holders.none" = "No app is preventing sleep";
+"holders.name.coreaudiod" = "Audio (coreaudiod)";
+"holders.name.sharingd" = "Handoff and AirDrop (sharingd)";
+"holders.name.caffeinate" = "caffeinate command (Terminal)";
+
+"battery.level" = "Battery: %d%% (%@)";
+"battery.state.full" = "full";
+"battery.state.charging" = "charging";
+"battery.state.plugged" = "plugged in";
+"battery.state.discharging" = "on battery";
+"battery.timeleft" = "Time remaining: %@";
+"battery.timetofull" = "Time to full charge: %@";
+"battery.health" = "Battery health: %d%%";
+"battery.cycles" = "Charge cycles: %d";
+"battery.temp" = "Battery temperature: %.1f °C";
+"battery.none" = "No battery detected";
+
+"awake.session" = "This session: %@";
+"awake.today" = "Kept awake today: %@";
+"awake.week" = "Kept awake, last 7 days: %@";
+
+"system.uptime" = "Mac uptime: %@";
+"system.thermal" = "Thermal state: %@";
+"system.lowpower" = "Low Power Mode is on";
+
+"thermal.nominal" = "normal";
+"thermal.fair" = "warm";
+"thermal.serious" = "hot";
+"thermal.critical" = "critical";
+
+"option.display" = "Keep the display on too";
+"option.lowbattery" = "Turn off below %d%% battery";
+"option.showpercent" = "Show battery % in menu bar";
+"option.login" = "Launch at login";
+
+"menu.support" = "Support Tazza ☕";
+"menu.sourcecode" = "Source code on GitHub";
+"menu.quit" = "Quit Tazza";
