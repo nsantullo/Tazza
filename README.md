@@ -8,7 +8,8 @@ Tazza uses the same macOS power assertion as `caffeinate`: no sudo, no daemon, n
 Quit the app and the assertion is released. It also runs two macOS tools locally: `system_profiler` to read battery
 health and `pmset` to turn off the screen.
 
-<!-- Screenshots: add the two images here when they are ready. -->
+<img src="docs/menu.png" width="283" alt="Tazza menu open in the menu bar, with options to keep the Mac awake for a set time or until an app quits">
+<img src="docs/stats.png" width="494" alt="Tazza Statistics submenu showing battery level, time remaining, health, charge cycles, temperature, time kept awake, uptime and thermal state">
 
 ## Features
 
