@@ -28,9 +28,20 @@ final class Notifier: NSObject, UNUserNotificationCenterDelegate {
         center.removeAllDeliveredNotifications()
     }
 
-    /// macOS asks the user only the first time. If they refuse, notifications silently do nothing.
+    /// macOS asks the user only the first time. If they refuse, notifications do nothing and the menu says so.
     static func requestPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { _, _ in }
+    }
+
+    /// For the menu, which is rebuilt as it opens. If macOS is slow to answer, the item stays out this time.
+    static func isDenied() -> Bool {
+        var denied = false
+        let done = DispatchSemaphore(value: 0)
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            denied = settings.authorizationStatus == .denied
+            done.signal()
+        }
+        return done.wait(timeout: .now() + 0.5) == .success && denied
     }
 
     static func post(_ text: String) {

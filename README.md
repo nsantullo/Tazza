@@ -8,6 +8,8 @@ Tazza uses the same macOS power assertion as `caffeinate`: no sudo, no daemon, n
 Quit the app and the assertion is released. It also runs two macOS tools locally: `system_profiler` to read battery
 health and `pmset` to turn off the screen.
 
+<!-- Screenshots: add the two images here when they are ready. -->
+
 ## Features
 
 - One click to keep your Mac awake: no time limit, 30 min, 1 h, 2 h or 4 h
@@ -30,14 +32,18 @@ health and `pmset` to turn off the screen.
 
 - Like `caffeinate -i`, Tazza does **not** stop a MacBook from sleeping when you close the lid. Whether it stays awake with an external display connected is up to macOS, not Tazza.
 - Battery cycles and temperature come from the system battery registry. Battery health comes from `system_profiler`, read each time the menu opens through a field Apple does not document. If that fails, Tazza shows an estimate from the registry, which can differ by a few points from what macOS shows. These values are read only and can be missing on some Macs.
-- Notifications need your permission, which macOS asks for the first time you start a session. If you refuse, Tazza works without them. You can change this in System Settings, Notifications. The two buttons on the warning may appear only when you move the pointer over the banner.
+- Notifications need your permission, which macOS asks for the first time you start a session. If you refuse, Tazza works without them. You can change this in System Settings, Notifications: while they are off, the menu shows an item that opens that page. The two buttons on the warning may appear only when you move the pointer over the banner.
 - The app is signed ad hoc, not with an Apple Developer ID, and it is not notarized. See below for what this means when you open it.
 - "Launch at login" may not work unless the app is in `/Applications`.
 - On a crowded menu bar, macOS can hide the icon, for example behind the notch.
 
+## Compatibility
+
+Built for macOS 13 or later, tested on macOS 26 with Apple Silicon; Intel and macOS 13 not tested.
+
 ## Download
 
-Download `Tazza-1.0.0.dmg` from the Releases page of https://github.com/nsantullo/Tazza, open it and drag Tazza into Applications.
+Download `Tazza-1.0.1.dmg` from the Releases page of https://github.com/nsantullo/Tazza, open it and drag Tazza into Applications.
 
 macOS may block the app the first time you open it, because it is signed ad hoc and not notarized.
 Try to open it, then go to System Settings, Privacy & Security, and choose Open Anyway.
@@ -83,8 +89,8 @@ and add the code to `CFBundleLocalizations` in `build.sh`. Pull requests are wel
 
 ## Support the project
 
-Tazza is free and always will be. If it is useful to you, you can support it here: see the Sponsor button on GitHub
-or the "Support Tazza" item in the app menu.
+Tazza is free and open source. If it is useful to you, you can support it on Ko-fi at https://ko-fi.com/nicolas92,
+with the Sponsor button on GitHub, or with the "Support Tazza" item in the app menu.
 
 ## License
 

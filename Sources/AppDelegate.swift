@@ -134,6 +134,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                                 #selector(toggleLowBattery), on: Prefs.stopOnLowBattery))
         menu.addItem(toggleItem(L("option.showpercent"), #selector(toggleShowPercent), on: Prefs.showBatteryInMenuBar))
         menu.addItem(toggleItem(L("option.login"), #selector(toggleLogin), on: launchAtLogin))
+        if Notifier.isDenied() {
+            menu.addItem(item(L("menu.notificationsoff"), #selector(openNotificationSettings)))
+        }
         menu.addItem(.separator())
 
         // Support and about
@@ -314,6 +317,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             else { try SMAppService.mainApp.register() }
         } catch {
             NSSound.beep() // usually means the app is not in /Applications or not signed
+        }
+    }
+
+    @objc private func openNotificationSettings() {
+        if let url = URL(string: "x-apple.systempreferences:com.apple.Notifications-Settings.extension") {
+            NSWorkspace.shared.open(url)
         }
     }
 

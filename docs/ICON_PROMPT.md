@@ -20,7 +20,7 @@ small sizes. No text, no letters, no border, no photo realism. Centered composit
 
 ## Menu bar icon
 
-The menu bar uses the built in Apple symbol `cup.and.saucer` (outline when off, filled when on), so no extra asset is needed.
+The menu bar icon is drawn in code in `Sources/MenuBarIcon.swift` (outline when off, filled with steam when on), so no extra asset is needed. It no longer uses the Apple symbol `cup.and.saucer`.
 
 ## Before you publish
 

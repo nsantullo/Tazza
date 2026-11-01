@@ -60,6 +60,7 @@
 "option.showpercent" = "Mostra % batteria nella barra";
 "option.login" = "Apri all'avvio";
 
+"menu.notificationsoff" = "Notifiche disattivate: apri Impostazioni";
 "menu.support" = "Sostieni Tazza ☕";
 "menu.sourcecode" = "Codice sorgente su GitHub";
 "menu.quit" = "Esci da Tazza";

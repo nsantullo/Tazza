@@ -60,6 +60,7 @@
 "option.showpercent" = "Show battery % in menu bar";
 "option.login" = "Launch at login";
 
+"menu.notificationsoff" = "Notifications are off: open Settings";
 "menu.support" = "Support Tazza ☕";
 "menu.sourcecode" = "Source code on GitHub";
 "menu.quit" = "Quit Tazza";

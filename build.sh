@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 GITHUB_USER="nsantullo"
 REPO_URL="https://github.com/${GITHUB_USER}/Tazza"
 DONATION_URL="https://ko-fi.com/nicolas92"   # or GitHub Sponsors / Buy Me a Coffee / PayPal.me
-VERSION="1.0.0"
+VERSION="1.0.1"
 BUNDLE_ID="com.nicolasantullo.tazza"
 
 APP="build/Tazza.app"
